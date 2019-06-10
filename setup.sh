@@ -4,6 +4,8 @@ cd ~
 mkdir daskData
 cd daskData
 
+git clone https://github.com/dask/dask-examples
+
 /usr/bin/tmux new-session -d -s jupyter
 /usr/bin/tmux send-keys -t jupyter "/home/ubuntu/anaconda/bin/jupyter lab --ip=0.0.0.0" C-m
 
